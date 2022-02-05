@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Osborn Pharmaceutical Laboratories | Contact</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo_opl.png" style="width:400px;height:auto;" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.794689961491!2d-73.98560488465681!3d40.76654017932603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2585872234153%3A0x37954e97ea2b9b44!2sHearst%20Tower%2C%20300%20W%2057th%20St%2C%20New%20York%2C%20NY%2010019%2C%20USA!5e0!3m2!1sen!2sin!4v1643997071844!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+               <div>
+                    <i class="fas fa-home fa-2x"></i>
+                    <span>
+                        <h5>New York Head Office<h5>
+                        <p>300 West 57th Street, Midtown Manhattan, NY 10019</p>
+                    </span>
+               </div>
+               <div>
+                <i class="fas fa-phone fa-2x"></i>
+                <span>
+                    <h5>+14151231234<h5>
+                    <p>Monday to Friday, 9:00 AM to 6:00 PM</p>
+                </span>
+           </div>
+           <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <span>
+                <h5>help@osbornpharma.com <h5>
+                <p>Email us for Research Collaborations/Order enquiries</p>
+            </span>
+       </div>
+           </div>
+            <div class="contact-col">
+                <form action="alert.html" method="get">
+                    <input type="text" name="name" placeholder="Enter name" required>
+                    <input type="email" name="email" placeholder="Enter email" required>
+                    <input type="text" name="subject"placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message"placeholder="message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Registered Trademark Osborn Pharmaceutical Laboratories Tower, 300 West 57th Street, Midtown Manhattan, NY 10019.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram" ></i>
+            <i class="fab fa-linkedin" ></i>
+        </div>
+        <p>Copyright &copy; 2022, All Rights Reserved by Osborn Pharmaceutical Laboratories</p>
+    </section>
+
+<!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+</html>

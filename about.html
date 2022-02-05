@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Osborn Pharmaceutical Laboratories | About</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo_opl.png" style="width:400px;height:auto;" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About us Content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's Largest Contributors in Health Sciences</h1>
+                <h2>1994</h2>
+                <h3>The birth of a dream</h3>
+                <p style="line-height: 22px; text-align: justify;">Scientist and entrepreneur Dr. Norman Osborn established Osborn Pharmaceutical Laboratories with the vision to make medicines accessible to everyone.
+                    <br>At OPL, we are constantly building and investing in cutting-edge technologies to fast-forward the pace of our science, helping us expand and accelerate our drug discovery and push the boundaries of science to achieve the next wave of breakthroughs.
+                    <br>Dedicated to Discovery and Committed to Cure has always been and continues to remain, our guiding purpose.
+                    <br>Driven by the same purpose, we have extended our presence to 200+ countries providing over 2,500 products across various therapeutic categories in 80+ dosage forms. 
+                </p>
+                
+                <a href="#" class="hero-btn red-btn">Explore</a>
+            </div>
+            <div class="about-col">
+                <img src="images/contact_background.jpg" alt="">
+                <img src="images/cta_background.jpg" alt="" style="width: 100%; height: 270px; margin-top: 35px;">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Registered Trademark Osborn Pharmaceutical Laboratories Tower, 300 West 57th Street, Midtown Manhattan, NY 10019.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram" ></i>
+            <i class="fab fa-linkedin" ></i>
+        </div>
+        <p>Copyright &copy; 2022, All Rights Reserved by Osborn Pharmaceutical Laboratories</p>
+    </section>
+
+<!-- JS for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+</html>
