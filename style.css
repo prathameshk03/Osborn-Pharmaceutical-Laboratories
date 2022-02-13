@@ -24,9 +24,18 @@
     min-height: 100%;
   }
   
+.chaticon {
+    height: 90px; 
+    position:fixed;
+    right: 5px;
+    bottom: 20px;   
+}
 
-  
- 
+.chaticon:hover {
+    height: 13%;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 /* Navigation */
 nav {
@@ -532,3 +541,50 @@ h3 {
      outline: none;
      border: 1px solid #ccc;
  }
+
+/*Chat bot*/
+ #chatbot {
+    height: 500px;  
+    border: 2px; 
+    border-radius: 5%; 
+    border-color: #10b0e0; 
+    border-style: solid;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+.openChat {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border: none;
+    z-index: 9;
+    border-radius: 5%;
+}
+    
+#cb {
+    max-width: 300px;
+    padding: 3px;
+    background-color: #c5fbff;
+    border-radius: 5%;
+    border: #10b0e0 solid;
+}
+  
+form .close {
+    background-color: white;
+    border-color: white;
+    border-radius: 10%;
+    width: 60px;
+    cursor: pointer;
+    color: black;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+form .close:hover {
+    border-color: black;
+}
