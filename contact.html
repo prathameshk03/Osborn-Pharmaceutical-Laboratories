@@ -27,6 +27,26 @@
         <h1>Contact Us</h1>
     </section>
 
+    <!--Chat bot-->
+    <img class="chaticon" src="images/chaticon2.png" onclick="openForm()">
+    <div class="openChat">
+        <form id="cb">
+            <iframe id="chatbot" src="https://webchat.botframework.com/embed/osbornchatbot-bot?s=BfZZN97wGJ4.mTXd8pr1ei-sGg_1ay69xV3NSFHKICKYJ6Z0HdNTJ0A""></iframe>            
+            <button type="button" class="btn close" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <script>
+        document .querySelector(".openChatBtn") .addEventListener("click", openForm);
+        document.querySelector(".close").addEventListener("click", closeForm);
+     
+        function openForm() {
+           document.querySelector(".openChat").style.display = "block";
+        }
+        function closeForm() {
+           document.querySelector(".openChat").style.display = "none";
+        }
+     </script>
+    
     <!-- Contact Page -->
     <section class="location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.794689961491!2d-73.98560488465681!3d40.76654017932603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2585872234153%3A0x37954e97ea2b9b44!2sHearst%20Tower%2C%20300%20W%2057th%20St%2C%20New%20York%2C%20NY%2010019%2C%20USA!5e0!3m2!1sen!2sin!4v1643997071844!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
