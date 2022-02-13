@@ -39,6 +39,25 @@
             </div>
         </section>
 
+    <!--Chat bot-->
+    <img class="chaticon" src="images/chaticon2.png" onclick="openForm()">
+    <div class="openChat">
+        <form id="cb">
+            <iframe id="chatbot" src="https://webchat.botframework.com/embed/osbornchatbot-bot?s=BfZZN97wGJ4.mTXd8pr1ei-sGg_1ay69xV3NSFHKICKYJ6Z0HdNTJ0A""></iframe>            
+            <button type="button" class="btn close" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <script>
+        document .querySelector(".openChatBtn") .addEventListener("click", openForm);
+        document.querySelector(".close").addEventListener("click", closeForm);
+     
+        function openForm() {
+           document.querySelector(".openChat").style.display = "block";
+        }
+        function closeForm() {
+           document.querySelector(".openChat").style.display = "none";
+        }
+     </script>
     
         <!-- Vision Mission -->
         <section class="vision">
