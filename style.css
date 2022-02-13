@@ -28,7 +28,8 @@
     height: 90px; 
     position:fixed;
     right: 5px;
-    bottom: 20px;   
+    bottom: 20px;
+    z-index: 7;
 }
 
 .chaticon:hover {
@@ -151,7 +152,7 @@ nav .fas {
 
     nav .fas {
         display: block;
-        color: rgb(248, 247, 247);
+        color: #401eff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
